@@ -63,9 +63,43 @@ body {
 /* || Header */
 
 .header {
+  --search-icon: 25px;
+  --header-gap: 20px;
+
   grid-column: 2 / 3;
   grid-row: 1 / 2;
   border: 1px solid black;
+  
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: var(--header-gap);
+
+  align-content: center;
+}
+
+.header__search {
+  grid-column: 1;
+}
+
+.header__search-icon {
+  border: 1px solid burlywood;
+  width: var(--search-icon);
+  height: var(--search-icon);
+}
+
+.header__input {
+  height: 30px;
+  background: grey;
+  width: calc(100% - var(--search-icon))
+}
+
+.header__profile {
+  grid-column: 2 / 3;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  gap: var(--header-gap);
 }
 
 /* || Nav */
