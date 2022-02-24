@@ -53,12 +53,20 @@ body {
   display: grid;
 }
 
+.l-flex {
+  display: flex;
+}
+
 .content {
   grid-template: 100px 100px 1fr / 1fr 4fr;
   height: 100%;
 }
 
 /* || Utilities */
+
+* {
+  list-style: none;
+}
 
 /* || Header */
 
@@ -90,7 +98,7 @@ body {
 .header__input {
   height: 30px;
   background: grey;
-  width: calc(100% - var(--search-icon))
+  width: calc(100% - var(--search-icon));
 }
 
 .header__profile {
@@ -107,7 +115,41 @@ body {
 .nav {
   grid-column: 2 / 3;
   grid-row: 2 / 3;
+  display: grid;
+  grid-template-columns: 70px 3fr 2fr;
+  align-items: center;
+  gap: 8px;
   border: 1px solid forestgreen;
+}
+
+.nav__profile-picture {
+  width: 70px;
+  height: 70px;
+  grid-column: 1 / 2;
+  border-radius: 100%;
+  background: black;
+}
+
+.nav__text {
+
+}
+
+.l-flex--nav-text {
+  flex-flow: column;
+  gap: 8px;
+}
+
+.nav__text--big {
+  font-size: 24px;
+}
+
+.l-flex--nav-buttons {
+  gap: 3vw;
+}
+
+.nav__btn {
+  width: 7vw;
+  height: 40px;
 }
 
 /* || Main */
@@ -136,5 +178,4 @@ body {
 
 .dashboard__menu {
   border: 1px solid black;
-  background:rgb(0, 96, 156);
 }
