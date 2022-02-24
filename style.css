@@ -90,4 +90,17 @@ body {
   border: 1px solid rgb(0, 96, 156);
   grid-column: 1 / 2;
   grid-row: 1 / -1;
+
+  display: grid;
+  grid-template: 100px 2fr 3fr / 100%;
+}
+
+.dashboard__logo {
+  border: 1px solid black;
+  grid-row: 1;
+}
+
+.dashboard__menu {
+  border: 1px solid black;
+  background:rgb(0, 96, 156);
 }
