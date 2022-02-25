@@ -240,6 +240,8 @@ body {
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;  
   overflow: hidden;
+
+  line-height: 17px;
 }
 
 /* || Trending */
