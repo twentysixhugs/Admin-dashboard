@@ -119,6 +119,7 @@ body {
   height: 30px;
   background: grey;
   width: calc(90% - var(--search-icon));
+  background: var(--content-outer-background);
 }
 
 .header__profile {
