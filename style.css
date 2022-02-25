@@ -68,7 +68,7 @@ body {
   --second-text-color: #ffffff;
   --card-border: #eeb32d;
   --content-outer-background: #e1e7f0;
-  grid-template: 80px 80px 1fr / 1fr 4fr;
+  grid-template: 80px 80px 1fr / min(30vw, 300px) 4fr;
   height: 100%;
 
   background: var(--content-outer-background);
@@ -96,7 +96,7 @@ body {
   grid-row: 1 / 2;
   
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 5fr minmax(250px, 2fr);
   gap: var(--header-gap);
 
   align-content: center;
@@ -118,7 +118,7 @@ body {
 .header__input {
   height: 30px;
   background: grey;
-  width: calc(100% - var(--search-icon));
+  width: calc(90% - var(--search-icon));
 }
 
 .header__profile {
@@ -307,4 +307,9 @@ body {
 
 .dashboard__logo {
   grid-row: 1;
+}
+
+.dashboard__img {
+  width: 25px;
+  height: 25px;
 }
