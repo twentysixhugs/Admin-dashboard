@@ -59,8 +59,15 @@ body {
 }
 
 .content {
+  --profile-pic--small: 50px;
+  --profile-pic--big: 70px;
   grid-template: 80px 80px 1fr / 1fr 4fr;
   height: 100%;
+}
+
+.profile-picture {
+  border-radius: 100%;
+  background: black;
 }
 
 /* || Utilities */
@@ -112,6 +119,11 @@ body {
   gap: var(--header-gap);
 }
 
+.profile-picture--header {
+  width: var(--profile-pic--small);
+  height: var(--profile-pic--small);
+}
+
 /* || Nav */
 
 .nav {
@@ -124,12 +136,10 @@ body {
   border: 1px solid forestgreen;
 }
 
-.nav__profile-picture {
-  width: 70px;
-  height: 70px;
+.profile-picture--nav {
+  width: var(--profile-pic--big);
+  height: var(--profile-pic--big);
   grid-column: 1 / 2;
-  border-radius: 100%;
-  background: black;
 }
 
 .nav__text {
@@ -201,6 +211,11 @@ body {
   border: 1px solid slateblue;
 }
 
+.project__heading {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
 /* || Announcements */
 
 .l-grid--announcements {
@@ -228,6 +243,11 @@ body {
 }
 
 /* || Trending */
+
+.profile-picture--trending {
+  width: var(--profile-pic--small);
+  height: var(--profile-pic--small);
+}
 
 /* || Dashboard */
 
