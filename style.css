@@ -154,10 +154,6 @@ body {
   grid-column: 1 / 2;
 }
 
-.nav__text {
-
-}
-
 .l-flex--nav-text {
   flex-flow: column;
   gap: 8px;
@@ -298,7 +294,4 @@ body {
 
 .dashboard__logo {
   grid-row: 1;
-}
-
-.dashboard__menu {
 }
