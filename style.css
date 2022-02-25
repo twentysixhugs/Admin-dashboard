@@ -131,6 +131,11 @@ body {
   gap: var(--header-gap);
 }
 
+.header__notifications {
+  width: 25px;
+  height: 25px;
+}
+
 .profile-picture--header {
   width: var(--profile-pic--small);
   height: var(--profile-pic--small);
@@ -250,8 +255,6 @@ body {
 .project__option {
   width: 25px;
   height: 25px;
-  border-radius: 100%;
-  background: black;
 }
 
 /* || Announcements */
