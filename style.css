@@ -64,7 +64,8 @@ body {
   --profile-pic--big: 70px;
   
   --content-inner-background: #ffffff;
-  --dashboard-background: #2291d3;
+  --lightblue: #2291d3;
+  --second-text-color: #ffffff;
   --card-border: #eeb32d;
   --content-outer-background: #e1e7f0;
   grid-template: 80px 80px 1fr / 1fr 4fr;
@@ -173,6 +174,10 @@ body {
 .nav__btn {
   width: max(7vw, 60px);
   height: 40px;
+
+  color: var(--second-text-color);
+
+  background: var(--lightblue);
 }
 
 /* || Main */
@@ -286,7 +291,9 @@ body {
   display: grid;
   grid-template: 100px 2fr 3fr / 100%;
 
-  background: var(--dashboard-background);
+  color: var(--second-text-color);
+
+  background: var(--lightblue);
 }
 
 .dashboard__logo {
