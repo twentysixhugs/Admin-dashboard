@@ -180,7 +180,7 @@ body {
 /* || Main */
 
 .main {
-  --inner-padding: 1vw;
+  --inner-padding: 10px;
   --heading-content-gap: 16px;
   grid-column: 2 / 3;
   grid-row: 3 / -1;
@@ -188,7 +188,7 @@ body {
   grid-template: 1fr 1fr / 2fr 1fr;
   overflow: scroll;
 
-  padding: 3vw;
+  padding: 10px;
 }
 
 .main__projects {
@@ -226,7 +226,7 @@ body {
 
 .l-grid--projects {
   /* grid-template: 1fr 1fr 1fr / 2fr 2fr; */
-  grid-template: 1fr 1fr / repeat(auto-fill, minmax(250px, 1fr)) ;
+  grid-template: 1fr 1fr / repeat(auto-fit, minmax(350px, 1fr)) ;
   gap: 2vw;
 
 }
