@@ -46,7 +46,8 @@ table {
 
 :root,
 body {
-  height: 100vh;  
+  height:auto;
+  min-height: 100%;
   font-size: 16px;
 }
 
@@ -150,7 +151,7 @@ body {
 }
 
 .nav__btn {
-  width: 7vw;
+  width: max(7vw, 60px);
   height: 40px;
 }
 
@@ -163,6 +164,8 @@ body {
   display: grid;
   grid-template: 1fr 1fr / 2fr 1fr;
   overflow: scroll;
+
+
 }
 
 .main__projects {
@@ -171,7 +174,6 @@ body {
   display: flex;
   flex-flow: column;
   border: 1px solid salmon;
-
 }
 
 .main__heading {
