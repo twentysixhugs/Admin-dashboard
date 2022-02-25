@@ -295,9 +295,9 @@ body {
   height: var(--profile-pic--small);
 }
 
-/* || Dashboard */
+/* || Sidebar */
 
-.dashboard {
+.sidebar {
   grid-column: 1 / 2;
   grid-row: 1 / -1;
 
@@ -309,11 +309,11 @@ body {
   background: var(--lightblue);
 }
 
-.dashboard__logo {
+.sidebar__logo {
   grid-row: 1;
 }
 
-.dashboard__img {
+.sidebar__img {
   width: 25px;
   height: 25px;
 }
