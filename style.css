@@ -59,7 +59,7 @@ body {
 }
 
 .content {
-  grid-template: 100px 100px 1fr / 1fr 4fr;
+  grid-template: 80px 80px 1fr / 1fr 4fr;
   height: 100%;
 }
 
@@ -163,8 +163,6 @@ body {
   display: grid;
   grid-template: 1fr 1fr / 2fr 1fr;
   overflow: scroll;
-
-
 }
 
 .main__projects {
@@ -175,10 +173,22 @@ body {
   border: 1px solid salmon;
 }
 
+.main__announcements {
+  display: flex;
+  flex-flow: column;
+  border: 1px solid green;
+}
+
+.main__trending {
+
+}
+
 .main__heading {
   font-weight: bold;
   font-size: calc(1rem + 4px);
 }
+
+/* || Projects */
 
 .l-grid--projects {
   grid-template: 1fr 1fr 1fr / 2fr 2fr;
@@ -190,6 +200,34 @@ body {
   height: 250px;
   border: 1px solid slateblue;
 }
+
+/* || Announcements */
+
+.l-grid--announcements {
+  grid-template-rows: 1fr 1fr 1fr;
+  height: 100%;
+  gap: 16px;
+  padding: 16px;
+}
+
+.announcement {
+  border: 1px solid gray;
+  font-size: calc(1rem - 2px);
+}
+
+.announcement__heading {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.announcement__text {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+}
+
+/* || Trending */
 
 /* || Dashboard */
 
