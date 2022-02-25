@@ -232,12 +232,25 @@ body {
 
 .project {
   height: 250px;
+  display: grid;
+  grid-template: calc(1rem + 2px) 1fr 50px / 1fr;
   background: var(--content-inner-background);
 }
 
 .project__heading {
   font-weight: bold;
   font-size: 1rem;
+}
+
+.project__options {
+  justify-self: end;
+}
+
+.project__option {
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  background: black;
 }
 
 /* || Announcements */
