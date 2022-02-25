@@ -47,6 +47,7 @@ table {
 :root,
 body {
   height: 100vh;  
+  font-size: 16px;
 }
 
 .l-grid {
@@ -66,6 +67,7 @@ body {
 
 * {
   list-style: none;
+  box-sizing: border-box;
 }
 
 /* || Header */
@@ -158,6 +160,34 @@ body {
   border: 1px solid saddlebrown;
   grid-column: 2 / 3;
   grid-row: 3 / -1;
+  display: grid;
+  grid-template: 1fr 1fr / 2fr 1fr;
+  overflow: scroll;
+}
+
+.main__projects {
+  grid-row: 1 / -1;
+
+  display: flex;
+  flex-flow: column;
+  border: 1px solid salmon;
+
+}
+
+.main__heading {
+  font-weight: bold;
+  font-size: calc(1rem + 4px);
+}
+
+.l-grid--projects {
+  grid-template: 1fr 1fr 1fr / 2fr 2fr;
+  gap: 12px;
+
+}
+
+.project {
+  height: 250px;
+  border: 1px solid slateblue;
 }
 
 /* || Dashboard */
