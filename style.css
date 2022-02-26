@@ -280,6 +280,7 @@ body {
   padding: 40px 25px;
   display: grid;
   grid-template: calc(1rem + 2px) 1fr 50px / 1fr;
+  gap: 6px;
 
   background: var(--content-inner-background);
   border-left: 10px solid var(--card-border);
