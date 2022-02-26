@@ -168,7 +168,7 @@ body {
 
   padding: 15px var(--header-nav-padding-horizontal);
 
-  box-shadow: 3px 5px 7px -3px rgb(168, 168, 168);
+  box-shadow: 0 5px 7px -5px rgb(168, 168, 168);
 }
 
 .profile-picture--nav {
@@ -210,6 +210,7 @@ body {
 .main {
   --inner-padding: 10px;
   --heading-content-gap: 16px;
+  --main-border-radius: 10px;
   grid-column: 2 / 3;
   grid-row: 3 / -1;
   display: grid;
@@ -263,16 +264,18 @@ body {
 
 .project {
   height: 250px;
+  padding: 40px 25px;
   display: grid;
   grid-template: calc(1rem + 2px) 1fr 50px / 1fr;
 
   background: var(--content-inner-background);
   border-left: 10px solid #efb32c;
+  border-radius: var(--main-border-radius);
 }
 
 .project__heading {
-  font-weight: bold;
-  font-size: 1rem;
+  font-weight: 600;
+  font-size: calc(1rem + 2px);
 }
 
 .project__text {
@@ -280,6 +283,9 @@ body {
 }
 
 .project__options {
+  display: flex;
+  align-items: flex-end;
+  gap: 20px;
   justify-self: end;
 }
 
@@ -297,6 +303,7 @@ body {
   padding: 25px 30px;
 
   background: var(--content-inner-background);
+  border-radius: var(--main-border-radius);
 }
 
 .announcement {
@@ -339,6 +346,7 @@ body {
   gap: 20px;
 
   background: var(--content-inner-background);
+  border-radius: var(--main-border-radius);
 }
 
 .trend {
