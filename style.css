@@ -46,11 +46,12 @@ table {
 
 :root,
 body {
-  --profile-pic--small: 50px;
+  --profile-pic--small: 47px;
   --profile-pic--big: 70px;
   
   --content-inner-background: #ffffff;
   --lightblue: #2291d3;
+  --lightgrey: #636363;
   --second-text-color: #ffffff;
   --card-border: #eeb32d;
   --content-background: #e1e7f0;
@@ -185,8 +186,8 @@ body {
   grid-column: 2 / 3;
   grid-row: 3 / -1;
   display: grid;
-  grid-template: 1fr 1fr / 2fr 1fr;
-  overflow: scroll;
+  grid-template: 1fr 1fr / 3fr 1fr;
+  overflow: auto;
 
   padding: 10px;
 
@@ -260,18 +261,21 @@ body {
 
 .announcements {
   grid-template-rows: 1fr 1fr 1fr;
-  height: 100%;
-  gap: 16px;
+
+  height: 350px;
+  padding: 25px;
+
+  gap: 32px;
   background: var(--content-inner-background);
 }
 
 .announcement {
-  font-size: calc(1rem - 2px);
+  font-size: calc(1rem - 4px);
 }
 
 .announcement__heading {
   font-weight: bold;
-  font-size: 1rem;
+  font-size: calc(1rem - 2px);
 }
 
 .announcement__text {
@@ -286,12 +290,34 @@ body {
 /* || Trending */
 
 .trending {
+  height: 350px;
+  padding: 25px;
+
+  grid-template-rows: 1fr / 1fr / 1fr / 1fr;
+  gap: 20px;
+
   background: var(--content-inner-background);
+}
+
+.trend {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: calc(1rem - 2px);
 }
 
 .profile-picture--trending {
   width: var(--profile-pic--small);
   height: var(--profile-pic--small);
+}
+
+.l-flex--trending {
+  flex-flow: column;
+  gap: 4px;
+}
+
+.trend__description {
+  color: var(--lightgrey);
 }
 
 /* || Sidebar */
