@@ -248,6 +248,10 @@ body {
   font-size: 1rem;
 }
 
+.project__text {
+  color: var(--lightgrey);
+}
+
 .project__options {
   justify-self: end;
 }
@@ -285,6 +289,8 @@ body {
   overflow: hidden;
 
   line-height: 17px;
+
+  color: var(--lightgrey);
 }
 
 /* || Trending */
