@@ -272,6 +272,7 @@ body {
   /* grid-template: 1fr 1fr 1fr / 2fr 2fr; */
   grid-template: 1fr 1fr / repeat(auto-fit, minmax(350px, 1fr)) ;
   gap: 2vw;
+  padding-bottom: 10px;
 
 }
 
