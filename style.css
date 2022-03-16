@@ -354,11 +354,10 @@ body {
 /* || Trending */
 
 .trending {
-  height: 350px;
+  height: 250px;
   padding: 25px;
 
   grid-template-rows: 1fr / 1fr / 1fr / 1fr;
-  gap: 20px;
 
   background: var(--content-inner-background);
   border-radius: var(--main-border-radius);
