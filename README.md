@@ -1,6 +1,8 @@
 # Admin dashboard
 
-**The live preview is available in GitHub pages**
+### [Live preview](https://twentysixhugs.github.io/admin-dashboard/)
+
+---
 
 ### Credits
 
