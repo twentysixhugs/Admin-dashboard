@@ -4,6 +4,9 @@
 
 ---
 
+## Key features
+- The project is almost entirely built on CSS Grid.
+
 ### Credits
 
 - Photos by <a href="https://unsplash.com/@acharki95?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Aziz Acharki</a> on <a href="https://unsplash.com/s/photos/profile?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
