@@ -1,6 +1,6 @@
 # Admin dashboard
 
-### [Live preview](https://twentysixhugs.github.io/admin-dashboard/)
+### [Live preview](https://twentysixhugs.github.io/Admin-dashboard/)
 
 ---
 
